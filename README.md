@@ -1,123 +1,98 @@
-# B2B PM Super Workbench
+# 🏗️ B2B PM Super Workbench v1.1.0
 
-> **One Person, One Skill — Deliver Professional-Grade B2B Product Full-Process Delivery from 0 to 1.**
-> Covers the complete lifecycle: Strategy → Requirements → Solution Design → Prototype → Documentation → Development → Data → Commercialization → Operations.
-> Even if you're a product newbie, using this Skill turns you into a senior B2B Product Manager instantly.
-> 
-> **V1.1.0 New:** SaaS Pricing Two Dimensions + Seven-Step Pricing Implementation Process | PLG Product-Led Growth Methodology | 2026 China SaaS Trends | JTBD (Jobs-to-Be-Done) Methodology | Copyright Notice + Disclaimer
+[![Version](https://img.shields.io/badge/version-1.1.0-blue)](https://github.com/yinjianheng/b2b-pm-workbench-international)
+[![License](https://img.shields.io/badge/license-Personal%20Use%20Only-red)](./LICENSE)
+[![Author](https://img.shields.io/badge/author-yinjianheng-orange)](https://github.com/yinjianheng)
+[![Platform](https://img.shields.io/badge/platform-WuKong%20%7C%20Claude%20%7C%20OpenClaw-brightgreen)](https://github.com/yinjianheng)
+
+> **B2B Product Manager Full-Stack AI Workbench | 11 Phases · 50+ Frameworks · 30+ Deliverables · 10 Role Hats**
+>
+> Covers PRD · BRD · SaaS · RBAC · AI Products · RAG · Agent · Multi-Tenancy · Approval Flows · Commercialization
 
 ---
 
-## Quick Start
+## 🎯 Why This Skill?
 
-Place this directory into `~/.claude/skills/` or `.claude/skills/` (project-level):
+| Pain Point | Solution |
+|------------|----------|
+| 🧩 B2B products are complex — no systematic methodology | **11-Phase Complete Lifecycle**: From strategy to operations, covers the full product chain |
+| 🔐 Permissions / approvals / multi-tenancy design is hard | **B2B Core Depth**: RBAC/ABAC/ReBAC · BPMN 2.0 Approval Flows · Multi-Tenant Architecture · Data Dictionary |
+| 🤖 AI product design lacks paradigms | **AI Product Full-Stack**: LLM Capability Boundaries · RAG 7 Patterns · Agent 6 Architectures · Prompt Engineering |
+| 📄 Document production is slow, templates are unprofessional | **10+ Professional Templates**: PRD · BRD · MRD · FRD · Competitive Analysis · User Research |
+| 💰 Pricing and commercialization lack methodology | **SaaS Pricing 2 Dimensions + 7-Step Process · PLG Methodology · 2026 SaaS Trends · JTBD** |
+
+---
+
+## 🚀 Core Capability Matrix
+
+| Phase | Core Capability | Key Outputs |
+|-------|----------------|-------------|
+| 0️⃣ Strategy & Market Insight | Industry analysis · Market segmentation · Competitive research | MRD · Competitive Analysis |
+| 1️⃣ Requirements Discovery | User research · Requirements mining · Scenario analysis | User Research Report · Backlog |
+| 2️⃣ Requirements Analysis & Prioritization | Prioritization · Version planning | RICE/MoSCoW · Backlog Plan |
+| 3️⃣ Solution Design | B2B core architecture · Permissions/Approvals/Multi-Tenancy | Solution Design Doc · Architecture Diagrams |
+| 4️⃣ AI Product Design | LLM Selection · RAG · Agent · Prompt | AI PRD · RAG Design Doc |
+| 5️⃣ Prototype & Interaction | Interactive prototypes · Design specs | HTML Interactive Prototypes |
+| 6️⃣ Diagrams & Architecture | Architecture diagrams · Flowcharts · ER diagrams | draw.io Source Files |
+| 7️⃣ Documentation Engineering | PRD · BRD · FRD · Data Dictionary | Professional Product Docs |
+| 8️⃣ Development Collaboration | Requirements review · Technical alignment · Acceptance | Acceptance Criteria · Release Checklist |
+| 9️⃣ Data & Growth | Data analysis · Growth strategy | Data Dashboard · Growth Plan |
+| 🔟 Commercialization & GTM | Pricing · Sales enablement · Market launch | Pricing Plan · Sales Enablement Kit |
+| 1️⃣1️⃣ Operations & Iteration | Customer success · Product iteration | Operations Report · Iteration Plan |
+
+---
+
+## 🧠 B2B Core Depth
+
+| Domain | Coverage |
+|--------|----------|
+| Permission Design | RBAC · ABAC · ReBAC · Data Permissions · Functional Permissions · Field-Level Permissions |
+| Approval Flows | BPMN 2.0 · Serial/Parallel/Counter-Sign/Transfer/Add-Sign/Return |
+| Multi-Tenancy | Isolated DB / Shared DB Isolated Schema / Shared DB Shared Schema |
+| Data Dictionary | Enum Management · Coding Rules · Master Data Management (MDM) |
+| Enterprise Integration | EIP Patterns · API Gateway · Message Queue · ESB |
+| Compliance & Audit | GDPR · SOC 2 · HIPAA · ISO 27001 · Audit Logging |
+
+---
+
+## 📦 Quick Start
 
 ```bash
-cp -r ~/Desktop/b2b-pm-workbench ~/.claude/skills/
+cp -r b2b-pm-workbench-international ~/.claude/skills/
 ```
 
-Then simply state your needs in Claude Code and it will auto-trigger, for example:
-- "Help me write a PRD for an enterprise CRM"
-- "Analyze competitors in the HR SaaS market"
-- "Draw a procurement approval flowchart"
-- "Generate a B2B admin dashboard prototype"
+**Trigger**: Just describe your need — auto-matches phases and methodologies:
+- "Write a PRD for an enterprise CRM"
+- "Design an approval flow engine"
+- "Conduct B2B competitive analysis"
+- "Design an AI customer service Agent product"
+- "Create a SaaS pricing plan"
 
 ---
 
-## Directory Structure
+## 🔗 Related Skills
 
-```
-b2b-pm-workbench/
-├── SKILL.md                              # Main skill file (core!)
-├── README.md                             # This file
-└── references/
-    ├── templates/                        # Document template library
-    │   ├── prd-template-b2b.md           # B2B PRD template (with approval flow / permissions / data dictionary)
-    │   ├── brd-template.md               # Business Requirements Document template
-    │   ├── mrd-template.md               # Market Requirements Document template
-    │   ├── frd-template.md               # Functional Requirements Document (with API definitions)
-    │   ├── competitive-analysis-b2b.md   # B2B competitive analysis template
-    │   ├── user-interview-b2b.md         # B2B user interview complete guide
-    │   ├── user-research-report.md       # User research report template
-    │   ├── sales-enablement.md           # Sales enablement kit template
-    │   ├── backlog-plan.md               # Backlog & version planning template
-    │   └── deliverables-checklist.md     # Deliverables checklist & quality standards
-    ├── methodologies/                    # Deep methodology library
-    │   └── b2b-specific-methods.md       # B2B-specific methodologies (permissions / approvals / multi-tenancy, etc.)
-    └── examples/                         # Complete examples
-        └── prd-example-erp-procurement.md # PRD complete example: procurement management module
-```
+| Skill | Focus | Repository |
+|-------|-------|------------|
+| [ai-pm-workbench-international](https://github.com/yinjianheng/ai-pm-workbench-international) | AI PM Workbench | LLM · RAG · Agent · AI Evaluation |
+| [ba-workbench-international](https://github.com/yinjianheng/ba-workbench-international) | Business Analysis Workbench | Strategy · Financial Modeling · Business Case |
+| [sa-pro-workbench-international](https://github.com/yinjianheng/sa-pro-workbench-international) | Solution Architect Workbench | Architecture · Diagrams · Bidding |
+
+> 💡 **Chinese Edition**: [b2b-pm-workbench](https://github.com/yinjianheng/b2b-pm-workbench) — China-focused B2B PM assistant
 
 ---
 
-## Core Capabilities
+## 📄 License
 
-### 10 Major Phases — Full Coverage
-0. Strategy & Market Insight → 1. Requirements Discovery & Management → 2. Requirements Analysis & Prioritization → 3. Solution Design → 4. Prototype & Interaction → 5. Diagrams & Architecture → 6. Documentation Engineering → 7. Development Collaboration → 8. Data & Growth → 9. Commercialization & GTM → 10. Operations & Iteration
-
-### 50+ Methodology Frameworks
-KANO / JTBD / Y-Model / SWOT / Porter's Five Forces / PESTLE / Business Model Canvas / RICE / MoSCoW / SPIN / C4 Model / BPMN / RBAC / ABAC / Multi-Tenancy Design / SaaS Pricing Models / PLG Product-Led Growth / 2026 China SaaS Trends / ...
-
-### 30+ Standard Deliverables
-PRD / BRD / MRD / FRD / Competitive Analysis / User Research Report / Interactive Prototype / Business Process Diagram / Architecture Diagram / Approval Flow Design / Data Dictionary / Sales Enablement Kit / Pricing Plan / PLG Growth Strategy / ...
+**Notice**: This Skill is a personal open-source project for personal learning, research, and non-commercial use only. Any form of commercial use (including but not limited to resale, bundled sales, commercial training, SaaS-based services) is strictly prohibited without the author's written authorization. The author has retained a professional IP legal team for global monitoring; infringement will be prosecuted.
 
 ---
 
-## Trigger Methods
-
-Simply say what you want to do in Claude Code, and the Skill auto-matches phases and methodologies:
-
-```
-# Documentation
-"Write a PRD for enterprise procurement management"
-"Conduct B2B CRM competitive analysis"
-"Write a BRD, product is XX"
-
-# Diagrams
-"Draw a swimlane diagram for procurement approval"
-"Draw a system technical architecture diagram"
-"Draw an ER diagram"
-
-# Prototypes
-"Generate an admin dashboard prototype"
-"Create an approval detail page prototype"
-
-# Strategy
-"Create a pricing plan for product XX"
-"Create a GTM strategy for product XX"
-"Analyze competitors in market XX"
-
-# Reporting
-"Create a monthly product review PPT"
-"Create a product approval review PPT"
-```
-
-## Dependent Skills (Auto-invoked by this Skill)
-
-| Task | Auto-invoke |
-|------|---------|
-| Diagramming | `drawio-skill` / `drawio-coderknock` / `drawio-generator-pro` / `excalidraw-diagram` |
-| PPT | `pptx-2` / `guizang-ppt-skill` / `deck-generator` |
-| Documents | `word-docx` / `minimax-pdf` / `word-cn-format` |
-| Spreadsheets | `xlsx` |
-| Prototypes | Directly generate HTML interactive prototypes (no extra tools needed) |
-
----
-
-## License
-
-Author: yinjianheng
-Contact: email: yinjianheng@foxmail.com / wechat: YJH-yinjianheng
-License: Free and open-source, for personal use only.
-
-**Legal Notice**: This Skill is protected under the Copyright Law of the People's Republic of China. Without the author's written authorization, any commercial use (including but not limited to resale, bundled sales, commercial training, SaaS-based services) is prohibited. Infringement will be pursued — Beijing Yingke Law Firm has been retained to periodically scan the Skill marketplace; legal action will be taken upon discovery of infringement.
-
----
-
-## Disclaimer
-
-1. **Non-Professional Advice**: The content provided by this Skill is for learning and reference only and does not constitute any form of professional advice (including but not limited to legal advice, financial advice, or technical decision-making advice).
-2. **Information Accuracy**: While every effort has been made to ensure the accuracy and timeliness of the content, no guarantee is made regarding the completeness, accuracy, or applicability of all information. Users should verify critical information independently.
-3. **Limitation of Liability**: To the maximum extent permitted by applicable law, the author assumes no liability for any direct, indirect, incidental, special, or consequential losses arising from the use of or reliance on the content of this Skill.
-4. **Third-Party Content**: The copyrights of third-party frameworks, methodologies, tools, and standards referenced in this Skill belong to their respective rights holders.
-5. **Usage Compliance**: Users shall ensure that their use of this Skill complies with the laws and regulations of their country/region and internal corporate policies.
+<p align="center">
+  <b>👨‍💻 yinjianheng (Yin Jianheng)</b> &nbsp;|&nbsp;
+  📧 yinjianheng@foxmail.com &nbsp;|&nbsp;
+  💬 WeChat: YJH-yinjianheng
+</p>
+<p align="center">
+  <sub>⭐ If this Skill helps you, please give it a Star to help others discover it!</sub>
+</p>
